@@ -17,13 +17,33 @@ body {
 	background: white;
   }
 
-  .buttons .shake {
-	padding: 10px 10px;
-	background-color: darkmagenta;
-	color: white;
-	border: none;
-	border-radius: 10px;
+  .options {
+	  display: flex;
+	  flex-direction: row;
+	  align-items: center;
+	  justify-content: space-between;
   }
+
+  button {
+	  background-color: darkmagenta;
+	  padding: 10px 10px;
+	  color: white;
+	  border-radius: 10px;
+	  border: none;
+	  margin-right: 10px;
+	  margin-bottom: 5px;
+	  transition: transform 0.2s ease-out;
+  }
+
+  .pressed {
+	background-color: rgb(65, 1, 65);
+	scale: 1.25;
+  }
+
+  .pressed:hover {
+	transform: scale(1.1, 1.1);
+  }
+
 
   canvas.shake {
 	animation: shake 0.5s linear 1;
